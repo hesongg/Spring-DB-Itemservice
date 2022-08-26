@@ -88,7 +88,7 @@ public class JpaItemRepositoryV3 implements ItemRepository {
 
     private BooleanExpression maxPrice(Integer maxPrice) {
         if (maxPrice != null) {
-            item.price.loe(maxPrice);
+            return item.price.loe(maxPrice);
         }
 
         return null;
